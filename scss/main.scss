@@ -1,5 +1,6 @@
 @import 'config';
 @import 'utilities';
+@import 'item_grid.scss';
 
 // general styles_utilities
 * {
@@ -119,6 +120,7 @@ img {
       line-height: 20px;
       text-align: center;
       padding: 0.5rem;
+      background-color:#fff;
 
       &:hover {
         background: $main-color;
@@ -148,7 +150,7 @@ h1 {
  
 #timeline ul {
   background:$bg-color;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 /* Create Line */
@@ -167,7 +169,7 @@ h1 {
   bottom: 0;
   width: 400px;
   padding: 1rem;
-  background:#70a1ff;
+  background:#00838f;
   transition: all 0.5s ease-in-out;
   visibility: hidden;
   opacity: 0;
@@ -181,7 +183,7 @@ h1 {
 
 /* Left Side */
 #timeline ul li:nth-child(even) div {
-  left: -460px;
+  left: -465px;
   transform: translate(-200px, 0);
 }
 
@@ -193,7 +195,7 @@ h1 {
   bottom: 0;
   width: 25px;
   height: 25px;
-  background: #70a1ff;
+  background: #00838f;
   transform: translateX(-50%);
   border-radius: 50%;
   transition: background 0.5s ease-in-out;
@@ -213,14 +215,14 @@ h1 {
 #timeline ul li:nth-child(odd) div:before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #70a1ff transparent transparent;
+  border-color: transparent #00838f transparent transparent;
 }
 
 /* Left Side Arrows */
 #timeline ul li:nth-child(even) div:before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #70a1ff;
+  border-color: transparent transparent transparent #00838f;
 }
 
 /* Show Boxes */
@@ -234,6 +236,20 @@ h1 {
   background: #fff;
 }
 
+/* Skills */
+.container-timeline {
+  padding-top: 10rem;
+}
+
+.container-skills {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#contact {
+  align-items: center;
+}
 
 @media(max-width: 900px) {
   #timeline ul li div {
