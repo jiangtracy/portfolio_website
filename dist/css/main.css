@@ -78,7 +78,7 @@ input[class^='btn-']:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     line-height: 0; }
   .item-text {
     position: absolute;
@@ -107,6 +107,10 @@ input[class^='btn-']:hover {
     font-size: 1.2rem;
     opacity: 0.7;
     margin: 0; }
+
+#insta-gif {
+  width: auto;
+  padding-left: 33%; }
 
 * {
   margin: 0;
